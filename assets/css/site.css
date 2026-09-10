@@ -242,19 +242,14 @@ a {
 
 .phone-frame {
   position: relative;
-  border-radius: 2.1rem;
-  overflow: hidden;
-  background: var(--ink);
-  box-shadow:
-    0 40px 80px rgba(5, 5, 5, 0.22),
-    0 0 0 1px rgba(5, 5, 5, 0.2);
-  transform: rotate(-2.5deg) translateY(1.5rem);
+  background: transparent;
+  box-shadow: 0 40px 80px rgba(5, 5, 5, 0.22);
 }
 
 .phone-frame img {
   width: 100%;
   height: auto;
-  vertical-align: middle;
+  display: block;
 }
 
 .phone-glow {
@@ -375,14 +370,16 @@ a {
 }
 
 .split-media {
-  border-radius: 1.6rem;
-  overflow: hidden;
-  background: var(--raised);
+  background: transparent;
   box-shadow: 0 24px 48px rgba(5, 5, 5, 0.1);
+  width: min(100%, 22rem);
+  justify-self: center;
 }
 
 .split-media img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .band {
@@ -520,10 +517,6 @@ a {
     justify-self: center;
     width: min(100%, 20rem);
     margin-right: 0;
-  }
-
-  .phone-frame {
-    transform: rotate(-1deg) translateY(0);
   }
 
   .steps,
